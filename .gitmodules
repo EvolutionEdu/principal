@@ -1,0 +1,6 @@
+[submodule "clients/landing"]
+	path = clients/landing
+	url = git@github.com:Mr-ZeMoreno/evolutionedu-landing.git
+[submodule "services/datalake"]
+	path = services/datalake
+	url = git@github.com:Mr-ZeMoreno/evolutionedu-datalake.git
