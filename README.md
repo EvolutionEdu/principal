@@ -4,4 +4,9 @@ Este es el repositorio principal de EvolutionEdu. El proyecto está organizado e
 
 A continuación se muestra un diagrama que ilustra cómo interactúan los distintos servicios del sistema:
 
-![Diagrama de interacción de servicios](/docs/digrama-v1.png)
+- **Frontend**
+
+![Diagrama de los servicios frontend](/docs/diagrama-v2-1.png)
+
+- **Backend**
+![Diagrama de los servicios backend](/docs/diagrama-v2-2.png)
