@@ -13,3 +13,6 @@
 [submodule "clients/admin"]
 	path = clients/admin
 	url = git@github.com:Mr-ZeMoreno/evolution-edu-admin-client.git
+[submodule "clients/panel"]
+	path = clients/panel
+	url = git@github.com:Mr-ZeMoreno/evolutionsedu-panel-client.git
