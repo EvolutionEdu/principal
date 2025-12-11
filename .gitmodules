@@ -16,3 +16,6 @@
 [submodule "clients/panel"]
 	path = clients/panel
 	url = git@github.com:Mr-ZeMoreno/evolutionsedu-panel-client.git
+[submodule "services/email"]
+	path = services/email
+	url = git@github.com:Mr-ZeMoreno/evolutionedu-mail-service.git

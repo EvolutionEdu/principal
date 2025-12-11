@@ -1,0 +1,23 @@
+---
+import Ancord from "global/components/Ancord.astro";
+
+interface Props {
+    href: string;
+    ariaLabel: string;
+}
+
+const { href, ariaLabel } = Astro.props;
+---
+
+<Ancord
+    href={href}
+    ariaLabel={ariaLabel}
+    color="orange"
+    classList={[
+        "hover:scale-110",
+        "transition-transform ease-in-out",
+        "text-center",
+    ]}
+>
+    <slot />
+</Ancord>
