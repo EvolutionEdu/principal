@@ -1,0 +1,20 @@
+services:
+  nginx:
+    image: nginx:stable-alpine
+    volumes:
+      - ./nginx/default.d:/etc/nginx/conf.d:ro
+      - ./nginx/logs:/var/log/nginx
+  landing:
+    build:
+      context: landing
+      dockerfile: dockerfile
+
+  admin:
+    build:
+      context: admin
+      dockerfile: dockerfile
+    environment:
+      - PORT=8000
+      - HOST=0.0.0.0
+      - PUBLIC_BASE_PATH=/admin
+      - PUBLIC_SITE_URL=http://evolutionedu.cl

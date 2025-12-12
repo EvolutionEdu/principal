@@ -1,15 +1,10 @@
 [submodule "clients/landing"]
 	path = clients/landing
 	url = git@github.com:Mr-ZeMoreno/evolutionedu-landing.git
-[submodule "services/datalake"]
-	path = services/datalake
-	url = git@github.com:Mr-ZeMoreno/evolutionedu-datalake.git
 [submodule "services/formulario"]
 	path = services/formulario
 	url = git@github.com:Mr-ZeMoreno/evolutionedu-formulario-service.git
 [submodule "services/dimensiones"]
-	path = services/dimensiones
-	url = git@github.com:Mr-ZeMoreno/evolutionedu-dimensiones-service.git
 [submodule "clients/admin"]
 	path = clients/admin
 	url = git@github.com:Mr-ZeMoreno/evolution-edu-admin-client.git
