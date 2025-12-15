@@ -1,3 +1,5 @@
+name: evolution-edu
+
 services:
   nginx-api:
     image: nginx:stable-alpine
