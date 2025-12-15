@@ -20,3 +20,6 @@
 [submodule "services/auth"]
 	path = services/auth
 	url = git@github.com:EvolutionEdu/auth-service.git
+[submodule "auth-client"]
+	path = auth-client
+	url = git@github.com:EvolutionEdu/auth-client.git
