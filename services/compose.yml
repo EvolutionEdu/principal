@@ -1,0 +1,11 @@
+services:
+  nginx-api:
+    image: nginx:stable-alpine
+    container_name: rev-proxy-api
+    ports:
+      - "8000:80"
+    volumes:
+      - ./nginx/default.d:/etc/nginx/conf.d:ro
+      - ./nginx/logs:/var/log/nginx
+    networks:
+      - api_network

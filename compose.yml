@@ -1,76 +1,13 @@
-services:
-  # Frontend
-  nginx:
-    extends:
-      file: ./clients/compose.yml
-      service: nginx
-    container_name: nginx-proxy
-    ports:
-      - "8001:80"
-    networks:
-      - client-network
+name: evolution-edu
 
-  landing:
-    extends:
-      file: ./clients/compose.yml
-      service: landing
-    image: landing:latest
-    networks:
-      - client-network
-
-  admin:
-    extends:
-      file: ./clients/compose.yml
-      service: admin
-    networks:
-      - client-network
-      - formulario_api
-    environment:
-      - API_ROUTE=http://formulario_app:8000
-
-  # Backend
-
-  formulario_db:
-    extends:
-      file: ./services/formulario/compose.yml
-      service: formulario_db
-    container_name: formulario_db
-    volumes:
-      - mysql_data:/var/lib/mysql
-    command: --default-authentication-plugin=mysql_native_password
-    restart: unless-stopped
-    networks:
-      - formulario_db
-
-  formulario_app:
-    extends:
-      file: ./services/formulario/compose.yml
-      service: formulario_app
-    container_name: formulario_app
-    depends_on:
-      - formulario_db
-    networks:
-      - formulario_db
-      - formulario_api   
-
-
-
-  # email:
-  #   extends:
-  #     file: ./services/email/compose.yml
-  #     service: email
-  #   ports:
-  #     - "25:25"
-  #     - "587:587"
-  #   restart: always
-
-
+include:
+  - ./clients/compose.yml
+  - ./services/compose.yml
+  - ./services/formulario/compose.yml
+  - ./services/reporte/compose.yml
 
 networks:
+  client_network:
+  api_network:
+  reporte_db:
   formulario_db:
-  client-network:
-  formulario_api:
-    driver: bridge
-
-volumes:
-  mysql_data:
