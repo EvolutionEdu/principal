@@ -5,9 +5,11 @@ include:
   - ./services/compose.yml
   - ./services/formulario/compose.yml
   - ./services/reporte/compose.yml
+  - ./services/auth/compose.yml
 
 networks:
   client_network:
   api_network:
   reporte_db:
   formulario_db:
+  usuarios_db:
