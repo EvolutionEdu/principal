@@ -9,7 +9,6 @@ services:
       - ./nginx/logs:/var/log/nginx
     networks:
       - client_network
-      - api_network
 
   landing:
     build:
