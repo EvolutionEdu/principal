@@ -20,3 +20,6 @@
 [submodule "services/auth"]
 	path = services/auth
 	url = git@github.com:EvolutionEdu/auth-service.git
+[submodule "services/madurez"]
+	path = services/madurez
+	url = git@github.com:EvolutionEdu/madurez-service.git

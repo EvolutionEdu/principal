@@ -1,4 +1,10 @@
-name: evolution-edu
+name: evolution-edu-services
+
+include:
+  - ./formulario/compose.yml
+  - ./reporte/compose.yml
+  - ./auth/compose.yml
+  - ./madurez/compose.yml
 
 services:
   nginx-api:

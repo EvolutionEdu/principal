@@ -3,13 +3,14 @@ name: evolution-edu
 include:
   - ./clients/compose.yml
   - ./services/compose.yml
-  - ./services/formulario/compose.yml
-  - ./services/reporte/compose.yml
-  - ./services/auth/compose.yml
 
 networks:
   client_network:
+    name: client_network
+    driver: bridge
   api_network:
+    name: api_network
+    driver: bridge
   reporte_db:
   formulario_db:
   usuarios_db:
