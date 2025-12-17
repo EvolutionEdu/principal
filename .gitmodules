@@ -10,7 +10,7 @@
 	url = git@github.com:Mr-ZeMoreno/evolution-edu-admin-client.git
 [submodule "services/email"]
 	path = services/email
-	url = git@github.com:Mr-ZeMoreno/evolutionedu-mail-service.git
+	url = git@github.com:EvolutionEdu/mail-service.git
 [submodule "clients/panel"]
 	path = clients/panel
 	url = git@github.com:Mr-ZeMoreno/evolutionsedu-panel-client.git
