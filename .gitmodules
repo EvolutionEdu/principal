@@ -1,12 +1,15 @@
 [submodule "clients/landing"]
 	path = clients/landing
 	url = https://github.com/EvolutionEdu/client-landing.git
-[submodule "services/formulario"]
-	path = services/formulario
-	url = https://github.com/EvolutionEdu/formulario-service.git
 [submodule "clients/admin"]
 	path = clients/admin
 	url = https://github.com/EvolutionEdu/client-admin.git
+[submodule "clients/auth"]
+	path = clients/auth
+	url = https://github.com/EvolutionEdu/auth-client.git
+[submodule "services/formulario"]
+	path = services/formulario
+	url = https://github.com/EvolutionEdu/formulario-service.git
 [submodule "services/email"]
 	path = services/email
 	url =  https://github.com/EvolutionEdu/mail-service.git
