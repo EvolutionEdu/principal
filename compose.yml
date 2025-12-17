@@ -14,3 +14,6 @@ networks:
   reporte_db:
   formulario_db:
   usuarios_db:
+  email_network:
+    name: email_network
+    driver: bridge
