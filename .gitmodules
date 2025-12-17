@@ -1,25 +1,21 @@
 [submodule "clients/landing"]
 	path = clients/landing
-	url = git@github.com:Mr-ZeMoreno/evolutionedu-landing.git
+	url = https://github.com/EvolutionEdu/client-landing.git
 [submodule "services/formulario"]
 	path = services/formulario
-	url = git@github.com:Mr-ZeMoreno/evolutionedu-formulario-service.git
-[submodule "services/dimensiones"]
+	url = https://github.com/EvolutionEdu/formulario-service.git
 [submodule "clients/admin"]
 	path = clients/admin
-	url = git@github.com:Mr-ZeMoreno/evolution-edu-admin-client.git
+	url = https://github.com/EvolutionEdu/client-admin.git
 [submodule "services/email"]
 	path = services/email
-	url = git@github.com:EvolutionEdu/mail-service.git
-[submodule "clients/panel"]
-	path = clients/panel
-	url = git@github.com:Mr-ZeMoreno/evolutionsedu-panel-client.git
+	url =  https://github.com/EvolutionEdu/mail-service.git
 [submodule "services/reporte"]
 	path = services/reporte
-	url = git@github.com:EvolutionEdu/reportes-service.git
+	url =  https://github.com/EvolutionEdu/reportes-service.git
 [submodule "services/auth"]
 	path = services/auth
-	url = git@github.com:EvolutionEdu/auth-service.git
+	url =  https://github.com/EvolutionEdu/auth-service.git
 [submodule "services/madurez"]
 	path = services/madurez
-	url = git@github.com:EvolutionEdu/madurez-service.git
+	url =  https://github.com/EvolutionEdu/madurez-service.git
