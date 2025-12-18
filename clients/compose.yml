@@ -13,9 +13,20 @@ services:
     networks:
       - client_network
     depends_on:
+      - assets
       - landing
       - auth
       - panel
+
+  assets:
+    build:
+      context: assets
+      dockerfile: dockerfile
+    container_name: assets
+    volumes:
+      - ./nginx/logs:/var/log/nginx
+    networks:
+      - client_network
 
   auth:
     build:
