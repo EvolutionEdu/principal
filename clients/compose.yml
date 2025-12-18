@@ -29,7 +29,10 @@ services:
     environment:
       PORT: 8000
       HOST: 0.0.0.0
-      NODE_ENV: "dev"
+      API_ROUTE: http://services:80
+      PUBLIC_BASE_PATH: /auth
+      PUBLIC_SITE_URL: http://evolutionedu.local
+      DOMAIN: evolutionedu.local
     networks:
       - client_network
       - api_network
@@ -47,6 +50,9 @@ services:
     environment:
       PORT: 8000
       HOST: 0.0.0.0
+      PUBLIC_BASE_PATH: /
+      PUBLIC_SITE_URL: http://evolutionedu.local
+      DOMAIN: evolutionedu.local
     networks:
       - client_network
 
@@ -63,7 +69,10 @@ services:
     environment:
       PORT: 8000
       HOST: 0.0.0.0
-      NODE_ENV: "dev"
+      API_ROUTE: http://services:80
+      PUBLIC_BASE_PATH: /auth
+      PUBLIC_SITE_URL: http://evolutionedu.local
+      DOMAIN: evolutionedu.local
     networks:
       - client_network
       - api_network
