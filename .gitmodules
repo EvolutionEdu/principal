@@ -22,3 +22,6 @@
 [submodule "services/madurez"]
 	path = services/madurez
 	url =  https://github.com/EvolutionEdu/madurez-service.git
+[submodule "clients/panel"]
+	path = clients/panel
+	url = git@github.com:EvolutionEdu/client-panel.git

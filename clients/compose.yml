@@ -50,6 +50,24 @@ services:
     networks:
       - client_network
 
+  panel:
+    build:
+      context: panel
+      dockerfile: dockerfile
+      args:
+        # API_ROUTE: http://services:80
+        PUBLIC_BASE_PATH: /panel
+        PUBLIC_SITE_URL: http://evolutionedu.local
+        DOMAIN: evolutionedu.local
+    container_name: panel_client
+    environment:
+      PORT: 8000
+      HOST: 0.0.0.0
+      NODE_ENV: "dev"
+    networks:
+      - client_network
+      - api_network
+
   # admin:
   #   build:
   #     context: admin
