@@ -24,3 +24,14 @@ services:
       - formulario_app
       - email_app
       - auth_app
+
+networks:
+  api_network:
+    name: api_network
+    driver: bridge
+  reporte_db:
+  formulario_db:
+  usuarios_db:
+  email_network:
+    name: email_network
+    driver: bridge

@@ -94,3 +94,7 @@ services:
   #   networks:
   #     - client_network
     
+networks:
+  client_network:
+    name: client_network
+    driver: bridge
