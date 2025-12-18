@@ -13,8 +13,9 @@ services:
     networks:
       - client_network
     depends_on:
+      - landing
       - auth
-      # - admin
+      - panel
 
   auth:
     build:
@@ -43,12 +44,14 @@ services:
       dockerfile: dockerfile
       args:
         PUBLIC_BASE_PATH: /
+        API_ROUTE: https://api.bithosting.cl
         PUBLIC_SITE_URL: http://evolutionedu.local
         DOMAIN: evolutionedu.local
     container_name: landing_client
     environment:
       PORT: 8000
       HOST: 0.0.0.0
+      API_ROUTE: https://api.bithosting.cl
       PUBLIC_BASE_PATH: /
       PUBLIC_SITE_URL: http://evolutionedu.local
       DOMAIN: evolutionedu.local
@@ -60,8 +63,8 @@ services:
       context: panel
       dockerfile: dockerfile
       args:
-        # API_ROUTE: https://api.bithosting.cl
         PUBLIC_BASE_PATH: /panel
+        API_ROUTE: https://api.bithosting.cl
         PUBLIC_SITE_URL: http://evolutionedu.local
         DOMAIN: evolutionedu.local
     container_name: panel_client
