@@ -21,7 +21,7 @@ services:
       context: auth
       dockerfile: dockerfile
       args:
-        API_ROUTE: http://services:80
+        API_ROUTE: https://api.bithosting.cl
         PUBLIC_BASE_PATH: /auth
         PUBLIC_SITE_URL: http://evolutionedu.local
         DOMAIN: evolutionedu.local
@@ -29,13 +29,12 @@ services:
     environment:
       PORT: 8000
       HOST: 0.0.0.0
-      API_ROUTE: http://services:80
+      API_ROUTE: https://api.bithosting.cl
       PUBLIC_BASE_PATH: /auth
       PUBLIC_SITE_URL: http://evolutionedu.local
       DOMAIN: evolutionedu.local
     networks:
       - client_network
-      - api_network
 
 
   landing:
@@ -61,7 +60,7 @@ services:
       context: panel
       dockerfile: dockerfile
       args:
-        # API_ROUTE: http://services:80
+        # API_ROUTE: https://api.bithosting.cl
         PUBLIC_BASE_PATH: /panel
         PUBLIC_SITE_URL: http://evolutionedu.local
         DOMAIN: evolutionedu.local
@@ -69,28 +68,26 @@ services:
     environment:
       PORT: 8000
       HOST: 0.0.0.0
-      API_ROUTE: http://services:80
+      API_ROUTE: https://api.bithosting.cl
       PUBLIC_BASE_PATH: /auth
       PUBLIC_SITE_URL: http://evolutionedu.local
       DOMAIN: evolutionedu.local
     networks:
       - client_network
-      - api_network
 
   # admin:
   #   build:
   #     context: admin
   #     dockerfile: dockerfile
   #     args:
-  #       API_ROUTE: http://services:80
+  #       API_ROUTE: https://api.bithosting.cl
   #   container_name: admin_client
   #   environment:
   #     PORT: 8000
   #     HOST: 0.0.0.0
   #     PUBLIC_BASE_PATH: /admin
   #     PUBLIC_SITE_URL: http://evolutionedu.cl
-  #     API_ROUTE: http://services:80
+  #     API_ROUTE: https://api.bithosting.cl
   #   networks:
   #     - client_network
-  #     - api_network
     
