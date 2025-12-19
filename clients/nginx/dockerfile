@@ -4,6 +4,8 @@ COPY nginx.conf /etc/nginx/nginx.conf
 
 COPY default.d/ /etc/nginx/conf.d/
 
+COPY static/ /var/www/evolutionedu/
+
 EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
