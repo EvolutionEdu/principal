@@ -35,7 +35,7 @@ services:
       args:
         API_ROUTE: https://api.bithosting.cl
         PUBLIC_BASE_PATH: /auth
-        PUBLIC_SITE_URL: http://evolutionedu.local
+        PUBLIC_SITE_URL: https://preview.bithosting.cl
         DOMAIN: evolutionedu.local
     container_name: auth_client
     environment:
@@ -43,7 +43,7 @@ services:
       HOST: 0.0.0.0
       API_ROUTE: https://api.bithosting.cl
       PUBLIC_BASE_PATH: /auth
-      PUBLIC_SITE_URL: http://evolutionedu.local
+      PUBLIC_SITE_URL: https://preview.bithosting.cl
       DOMAIN: evolutionedu.local
     networks:
       - client_network
@@ -56,7 +56,7 @@ services:
       args:
         PUBLIC_BASE_PATH: /
         API_ROUTE: https://api.bithosting.cl
-        PUBLIC_SITE_URL: http://evolutionedu.local
+        PUBLIC_SITE_URL: https://preview.bithosting.cl
         DOMAIN: evolutionedu.local
     container_name: landing_client
     environment:
@@ -64,7 +64,7 @@ services:
       HOST: 0.0.0.0
       API_ROUTE: https://api.bithosting.cl
       PUBLIC_BASE_PATH: /
-      PUBLIC_SITE_URL: http://evolutionedu.local
+      PUBLIC_SITE_URL: https://preview.bithosting.cl
       DOMAIN: evolutionedu.local
     networks:
       - client_network
@@ -76,7 +76,7 @@ services:
       args:
         PUBLIC_BASE_PATH: /panel
         API_ROUTE: https://api.bithosting.cl
-        PUBLIC_SITE_URL: http://evolutionedu.local
+        PUBLIC_SITE_URL: https://preview.bithosting.cl
         DOMAIN: evolutionedu.local
     container_name: panel_client
     environment:
@@ -84,7 +84,7 @@ services:
       HOST: 0.0.0.0
       API_ROUTE: https://api.bithosting.cl
       PUBLIC_BASE_PATH: /auth
-      PUBLIC_SITE_URL: http://evolutionedu.local
+      PUBLIC_SITE_URL: https://preview.bithosting.cl
       DOMAIN: evolutionedu.local
     networks:
       - client_network
