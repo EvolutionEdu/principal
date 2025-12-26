@@ -2,9 +2,7 @@ name: backend
 
 include:
   - ./formulario/compose.yml
-  - ./reporte/compose.yml
   - ./auth/compose.yml
-  - ./madurez/compose.yml
   - ./email/compose.yml
 
 services:
