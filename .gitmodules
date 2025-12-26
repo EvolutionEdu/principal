@@ -13,9 +13,6 @@
 [submodule "services/email"]
 	path = services/email
 	url =  https://github.com/EvolutionEdu/mail-service.git
-[submodule "services/reporte"]
-	path = services/reporte
-	url =  https://github.com/EvolutionEdu/reportes-service.git
 [submodule "services/auth"]
 	path = services/auth
 	url =  https://github.com/EvolutionEdu/auth-service.git
