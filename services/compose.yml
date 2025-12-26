@@ -18,7 +18,6 @@ services:
     networks:
       - api_network
     depends_on:
-      - reporte_app
       - formulario_app
       - email_app
       - auth_app
@@ -27,7 +26,7 @@ networks:
   api_network:
     name: api_network
     driver: bridge
-  reporte_db:
+  usuarios_cache:
   formulario_db:
   usuarios_db:
   email_network:
