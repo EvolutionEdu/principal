@@ -83,7 +83,7 @@ services:
       PORT: 8000
       HOST: 0.0.0.0
       API_ROUTE: https://api.bithosting.cl
-      PUBLIC_BASE_PATH: /auth
+      PUBLIC_BASE_PATH: /panel
       PUBLIC_SITE_URL: https://preview.bithosting.cl
       DOMAIN: evolutionedu.local
     networks:
