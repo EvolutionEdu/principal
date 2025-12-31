@@ -33,18 +33,13 @@ services:
       context: auth
       dockerfile: dockerfile
       args:
-        API_ROUTE: https://api.bithosting.cl
         PUBLIC_BASE_PATH: /auth
         PUBLIC_SITE_URL: https://preview.bithosting.cl
-        DOMAIN: evolutionedu.local
     container_name: auth_client
     environment:
       PORT: 8000
       HOST: 0.0.0.0
-      API_ROUTE: https://api.bithosting.cl
-      PUBLIC_BASE_PATH: /auth
-      PUBLIC_SITE_URL: https://preview.bithosting.cl
-      DOMAIN: evolutionedu.local
+      API_ROUTE_SECRET: https://api.bithosting.cl
     networks:
       - client_network
 
@@ -55,17 +50,13 @@ services:
       dockerfile: dockerfile
       args:
         PUBLIC_BASE_PATH: /
-        API_ROUTE: https://api.bithosting.cl
         PUBLIC_SITE_URL: https://preview.bithosting.cl
         DOMAIN: evolutionedu.local
     container_name: landing_client
     environment:
       PORT: 8000
       HOST: 0.0.0.0
-      API_ROUTE: https://api.bithosting.cl
-      PUBLIC_BASE_PATH: /
-      PUBLIC_SITE_URL: https://preview.bithosting.cl
-      DOMAIN: evolutionedu.local
+      API_ROUTE_SECRET: https://api.bithosting.cl
     networks:
       - client_network
 
@@ -75,36 +66,16 @@ services:
       dockerfile: dockerfile
       args:
         PUBLIC_BASE_PATH: /panel
-        API_ROUTE: https://api.bithosting.cl
         PUBLIC_SITE_URL: https://preview.bithosting.cl
         DOMAIN: evolutionedu.local
     container_name: panel_client
     environment:
       PORT: 8000
       HOST: 0.0.0.0
-      API_ROUTE: https://api.bithosting.cl
-      PUBLIC_BASE_PATH: /panel
-      PUBLIC_SITE_URL: https://preview.bithosting.cl
-      DOMAIN: evolutionedu.local
+      API_ROUTE_SECRET: https://api.bithosting.cl
     networks:
       - client_network
 
-  # admin:
-  #   build:
-  #     context: admin
-  #     dockerfile: dockerfile
-  #     args:
-  #       API_ROUTE: https://api.bithosting.cl
-  #   container_name: admin_client
-  #   environment:
-  #     PORT: 8000
-  #     HOST: 0.0.0.0
-  #     PUBLIC_BASE_PATH: /admin
-  #     PUBLIC_SITE_URL: http://evolutionedu.cl
-  #     API_ROUTE: https://api.bithosting.cl
-  #   networks:
-  #     - client_network
-    
 networks:
   client_network:
     name: client_network
